@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">	
 </head>
 <body>
-	<!-- INICIO ENCABEZADO Y MENU -->
+	<!-- ENCABEZADO Y MENU -->
 	<div class="container">
 		<div class="page-header">
 			<h1>Control de cursos FEI<small>   Administrador</small></h1>
@@ -17,6 +17,7 @@
 			<li><a href="admin.html">Home</a></li>
 			<li><a href="cursos.html">Cursos</a></li>
 			<li class="active"><a href="#">Usuarios</a></li>
+			<li><a href="alumnos.html">Alumnos</a></li>
 			<li><a href="estadisticas.html">Estadisticas</a></li>
 			<li class="dropdown">
 			    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -31,7 +32,7 @@
 			 </li>	
 		</ul>		
 	</div>
-	<!-- FIN ENCABEZADO Y MENU -->
+	<!-- TABLA DE USUARIOS REGISTRADOS -->
 	<div class="container">
 		<div class="row">
 			<br>
@@ -78,26 +79,25 @@
 			</div>
 		</div>
 	</div>
-	<!-- Bótones de Usuarios -->
+	<!-- FIN DE TABLA -->
+	<!-- BOTONES PARTE INFERIOR -->
 	<div class="container">
 			<div class="row">
 				<div class="col-md-2 col-md-offset-10">
 					<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Añadir usuario</button>
-					<!-- <a href="usuarios_detalles.html" class="btn btn-default" role="button">Detalles<a>										 -->
 				</div>				
 			</div>					
 	</div>
-	<!-- Ventana modal de registro de usuarios -->
+	<!-- VENTANA MODAL USUARIOS_AÑADIR -->
 		<div class="container">
 			<div class="modal fade" data-keyboard="false" data-backdrop="static" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 							<h4 class="modal-title" id="myModalLabel">Añadir usuario nuevo</h4>
 						</div>
 						<div class="modal-body">							
-							<!-- FORMULARIO AQUÍ -->
+							<!-- FORMULARIO  -->
 							<form class="form-horizontal"role="form">
 								<div class="form-group">
 									<label for="user" class="col-sm-3 control-label">Nombre</label>
