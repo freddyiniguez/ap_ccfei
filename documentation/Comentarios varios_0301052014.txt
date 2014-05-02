@@ -1,0 +1,16 @@
+tbl.Alumos(idAlumno, NombreCompleto, email)
+tbl.Lista(idLista, fk_idAlumno, calificacion)
+tbl.Cursos(idCurso, fk_idMaestro, fk_idLista, nombreCurso, fechaInicio, fechaTermino, )
+tbl.Constancias(fk_idAlumno, recurso)
+
+
+Estadísticas:
+- Indice de aprobación/reprobación
+- Rendimiento del maestro
+- Rendimiento del curso
+- Número de cursos activos/inactivos
+
+
+30 de Abril:
+	- Funcionalidad de las muestraPáginas(etc..) o todas aquellas que lleven y muestren en una tabla a los respectivos usuarios, alumnos, etc. Se deberá de añadir un campo para buscar a determinado.
+	- ¿Cómo se diseña un servicio? Es decir, un servicio como el que cada 6 meses el sistema borre automáticamente a un alumno.
