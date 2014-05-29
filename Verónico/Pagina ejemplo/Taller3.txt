@@ -1,0 +1,16 @@
+4.5.1 vistas hasta hay vamos proyecto taller3
+
+
+
+NICO-integracionde datos de pantallas pentajo
+NICO=-pantallas de generacion scrip mysql
+NICO=-crear esquema oracool
+ANTONIO=2.2 esquema de fragmentacion
+ANTONIO=2.3 esquema de ubicacion
+NICO=3.2 diccionario de datos agregar 2 tablas
+ANTONIO=4.4 replicacion de SQL Server
+
+ANTONIO Y NICO= 4.5.1 vistas  
+
+JUNTA DE PROYECTO
+MIERCOLES   16 de Abril 2014 hora 11am 2pm Lugar  blbioteca carlos fuentes

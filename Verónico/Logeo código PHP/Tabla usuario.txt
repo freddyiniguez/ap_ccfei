@@ -1,0 +1,7 @@
+CREATE TABLE `usuario` (  
+`idusuario` INTEGER(11) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT,  
+`Nombre` VARCHAR(20) NOT NULL DEFAULT '',  
+`nick` VARCHAR(20) NOT NULL DEFAULT '',  
+`contrasenia` VARCHAR(20) NOT NULL DEFAULT '',  
+PRIMARY KEY (`idusuario`),  UNIQUE KEY `idusuario` (`idusuario`)
+) ENGINE=InnoDB CHARACTER SET 'latin1';

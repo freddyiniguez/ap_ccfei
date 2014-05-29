@@ -1,0 +1,58 @@
+<?php
+function validarUsuario($usuario, $password)
+	{
+		$conexion = new mysqli("localhost","root","123","sistema");
+		$consulta = "select usuario, password From usuarios where id = '$usuario';";
+		
+		$result = $conexion->query($consulta);
+		
+		if($result->num_rows > 0)
+		{
+			$fila = $result->fetch_assoc();
+			if( strcmp($password,$fila["password"]) == 0 )
+				echo "contraseña correcta";						
+			else					
+				return false;
+		}
+		else
+				return false;
+	}
+?>
+<html>
+<head>
+<! <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registro</title>
+
+
+<link rel="stylesheet" href="estilo.css" type="text/css">
+<style type="text/css"></style>
+</head>
+
+
+
+<body>
+<div style="width: 780px; position: relative; margin-left: auto; margin-right: auto;">
+<div id="contenedor">
+
+<span style="color: yellow;" class="Estilo"><center><h1>BIENBENIDO A LA PAGINA DE REGISTRO</h1></center></span><br>
+
+<form action="index.php" method="POST">
+
+<p align="center"><span style="color: white;" class="Estilo">Usuario_:<input type="text    " name="user" /><br /></span>
+<span style="color: white;" class="Estilo">Password:<input type="password" name="pass" /><br /></span>
+<span style="color: white;" class="Estilo"> Como De sea iniciar Secion: <name="usuarios" /><br /></span>
+<select name="usuarioss"></option> 
+    <option>Tipos de Usuarios:
+    <option value="Aministrador">Aministrador</option> 
+    <option value="Empleado">Empleado</option> 
+    <option value="Usuario_Normal">Usuario_Normal</option> 
+    <option value="Gerente">Gerente</option> 
+ 
+</select>
+</p>
+<p align="center"><input type="submit" value="Registrar" />
+
+</form>
+
+</body>
+</html>

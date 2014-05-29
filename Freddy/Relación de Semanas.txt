@@ -1,0 +1,18 @@
+COM-FRED
+
+Projecto:
+CONTROL DE CURSOS FEI
+
+Relación de las semanas para el Cronograma de Actividades
+
+Semana 0	24 MAR - 28 MAR
+Semana 1	31 MAR - 04 ABR
+Semana 2 	07 ABR - 11 ABR
+Semana 3 	21 ABR - 25 ABR
+Semana 4 	28 ABR - 02 MAY
+Semana 5 	05 MAY - 09 MAY
+Semana 6 	12 MAY - 16 MAY
+Semana 7 	19 MAY - 23 MAY
+Semana 8 	26 MAY - 30 MAY
+Semana 9 	02 JUN - 06 JUN
+Semana 10 	09 JUN - 13 JUN

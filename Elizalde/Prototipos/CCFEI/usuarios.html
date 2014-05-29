@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Control de cursos FEI - Usuarios</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<meta charset="UTF-8">	
+</head>
+<body>
+	<!-- ENCABEZADO Y MENU -->
+	<div class="container">
+		<div class="page-header">
+			<h1>Control de cursos FEI<small>   Administrador</small></h1>
+		</div>
+	</div>
+	<div class="container">
+		<ul class="nav nav-pills">
+			<li><a href="admin.html">Home</a></li>
+			<li><a href="cursos.html">Cursos</a></li>
+			<li class="active"><a href="#">Usuarios</a></li>
+			<li><a href="alumnos.html">Alumnos</a></li>
+			<li><a href="estadisticas.html">Estadisticas</a></li>
+			<li class="dropdown">
+			    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			      Opciones <span class="caret"></span>
+			    </a>
+			    <ul class="dropdown-menu">
+			      <li><a href="#">Opción1</a></li>
+			      <li><a href="#">Opción2</a></li>		
+			      <li class="divider"></li>
+			      <li><a href="#">Cerrar sesión</a></li>
+			    </ul>
+			 </li>	
+		</ul>		
+	</div>
+	<!-- TABLA DE USUARIOS REGISTRADOS -->
+	<div class="container">
+		<div class="row">
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Usuarios registrados</div>
+					<table class="table table-bordered table-condensed table-hover">
+						<thead>
+							<tr>
+								<th>Usuario</th>
+								<th>Nombre</th>
+								<th>Correo electrónico</th>
+								<th>Rol</th>
+								<th>Estado</th>
+							</tr>	
+						</thead>				
+						<tbody>
+							<tr>
+								<td><a href="usuarios_detalles.html">usuario1</a></td>
+								<td>Juan Perez</td>
+								<td>juan@perez.com</td>
+								<td>Académico</td>
+								<td>Activo</td>
+							</tr>
+							<tr>
+								<td><a href="usuarios_detalles.html">usuario2</a></td>
+								<td>Carlos Ochoa</td>
+								<td>carlos@ochoa.com</td>
+								<td>Académico</td>
+								<td>Activo</td>
+							</tr>
+							<tr>
+								<td><a href="usuarios_detalles.html">usuario3</a></td>
+								<td>José Castillo</td>
+								<td>Jose@castillo.com</td>
+								<td>Administrador</td>
+								<td>Inactivo</td>
+							</tr>						
+						</tbody>				
+					</table>							
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FIN DE TABLA -->
+	<!-- BOTONES PARTE INFERIOR -->
+	<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-md-offset-10">
+					<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Añadir usuario</button>
+				</div>				
+			</div>					
+	</div>
+	<!-- VENTANA MODAL USUARIOS_AÑADIR -->
+		<div class="container">
+			<div class="modal fade" data-keyboard="false" data-backdrop="static" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Añadir usuario nuevo</h4>
+						</div>
+						<div class="modal-body">							
+							<!-- FORMULARIO  -->
+							<form class="form-horizontal"role="form">
+								<div class="form-group">
+									<label for="user" class="col-sm-3 control-label">Nombre</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="name" placeholder="Nombre">
+									</div>										
+								</div>
+								<div class="form-group">
+									<label for="user" class="col-sm-3 control-label">Apellido paterno</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="name" placeholder="Apellido paterno">
+									</div>										
+								</div>
+								<div class="form-group">
+									<label for="user" class="col-sm-3 control-label">Apellido materno</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="name" placeholder="Apellido materno">
+									</div>										
+								</div>
+								<div class="form-group">
+									<label for="user" class="col-sm-2 col-sm-offset-1 control-label">Usuario</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="user" placeholder="Nombre de usuario">
+									</div>										
+								</div>
+								<div class="form-group">
+									<label for="email" class="col-sm-2 col-sm-offset-1 control-label">Email</label>
+									<div class="col-sm-8">
+										<input type="email" class="form-control" id="email" placeholder="Correo electrónico">									
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="password" class="col-sm-2 col-sm-offset-1 control-label">Password</label>
+									<div class="col-sm-8">
+										<input type="password" class="form-control" id="password" placeholder="Password">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="passwordc" class="col-sm-3 control-label">Confirmación</label>
+									<div class="col-sm-8">
+										<input type="password" class="form-control" id="passwordc" placeholder="Confirmar password">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="form-control" class="col-sm-2 col-sm-offset-1 control-label">Rol</label>
+									<div class="col-sm-4">
+										<select class="form-control">
+											<option>Académico</option>
+											<option>Administrador</option>										  
+										</select>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary">Guardar</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>	
+	<!-- Javascript -->
+	<script type="text/javascript" src='js/jquery-2.1.0.js'></script>
+	<script type="text/javascript" src='js/bootstrap.min.js'></script>
+</body>
+</html>
+
