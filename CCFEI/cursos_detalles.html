@@ -38,8 +38,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-1 col-md-offset-11">
-				<button type="button" class="btn btn-primary">Editar</button>												
+			<div class="col-md-1 col-md-offset-10">
+				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Modificar información</button>	
 			</div>				
 		</div>
 		<br>			
@@ -52,12 +52,7 @@
 				<p>Usuario: </p>
 				<p>Más datos: </p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-1 col-md-offset-11">
-				<button type="button" class="btn btn-primary">Editar</button>												
-			</div>				
-		</div>
+		</div>		
 		<br>
 		<div class="panel panel-default">
 			<!-- Default panel contents -->
@@ -98,11 +93,109 @@
 			<div class="col-md-2 col">
 				<a href="cursos.html" class="btn btn-default" role="button">Atrás<a>
 			</div>
-			<div class="col-md-1 col-md-offset-9">
-				<button type="button" class="btn btn-primary">Editar</button>												
+			<div class="col-md-2 col-md-offset-8">
+				<button class="btn btn-success" data-toggle="modal" data-target="#myModal2">Inscribir alumno</button>			
 			</div>				
 		</div>
 	</div>
+	<!-- Ventana modal Modificar Información -->
+	<div class="container">
+			<div class="modal fade" data-keyboard="false" data-backdrop="static" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Información de curso</h4>
+						</div>
+						<div class="modal-body">							
+							<!-- FORMULARIO  -->
+							<form class="form-horizontal"role="form">
+								<div class="form-group">
+									<label for="user" class="col-sm-3 control-label">Fecha Inicio</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="fechaI">
+									</div>										
+								</div>
+								<div class="form-group">
+									<label for="user" class="col-sm-3 control-label">Fecha término</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="fechaT">
+									</div>										
+								</div>
+								<div class="form-group">
+									<label for="user" class="col-sm-2 col-sm-offset-1 control-label">Tipo</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="tipo" placeholder="Tipo">
+									</div>										
+								</div>
+								<div class="form-group">
+									<label for="email" class="col-sm-2 col-sm-offset-1 control-label">Salón</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="salón" placeholder="Salón">									
+									</div>
+								</div>								
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary">Guardar cambios</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<!-- Ventana modal Inscribir alumnos  -->
+		<div class="container">
+			<div class="modal fade" data-keyboard="false" data-backdrop="static" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Inscribir alumnos</h4>
+						</div>
+						<div class="modal-body">							
+							<!-- Tabla de alumnos registrados  -->
+							<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr>
+										<th>Nombre</th>
+										<th>Matricula</th>
+										<th>Correo electrónico</th>
+										<th>Otro dato</th>
+									</tr>	
+								</thead>				
+								<tbody>
+									<tr>
+										<td>Alumno1</td>
+										<td>zs099797687</td>
+										<td>juan@perez.com</td>
+										<td>Más</td>
+									</tr>
+									<tr>
+										<td>Alumno2</td>
+										<td>zs09871234</td>
+										<td>carlos@ochoa.com</td>
+										<td>Menos</td>
+									</tr>
+									<tr>
+										<td>Alumno3</td>
+										<td>zs09871234</td>
+										<td>Jose@castillo.com</td>
+										<td>e=mc^2</td>
+									</tr>						
+								</tbody>				
+							</table>	
+
+							
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary">Inscribir</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>	
 	<br>
+	<script type="text/javascript" src='js/jquery-2.1.0.js'></script>
+	<script type="text/javascript" src='js/bootstrap.min.js'></script>
 </body>
 </html>
