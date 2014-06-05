@@ -1,0 +1,54 @@
+<?php
+if ($nombre==""){ 
+    echo '<script type="text/javascript">alert("El campo Nombre* es obligatorio");</script>'; 
+}
+?>
+
+
+<?php
+							          
+$password=$_POST['password'];
+	                                 
+ $confirmacion=$_POST['confirmacion'];
+							          if($password==$confirmacion){
+							           echo "la contraseñas coinsiden"
+							          }else{  
+							         
+echo "Las contraseñas no coinciden"
+							          }
+							
+							?>
+
+
+
+?php 
+    $usuario=$_POST['usuario'];
+	$password=$_POST['password'];
+if ($password==$confirmacion){ 
+    echo '<script type="text/javascript">alert("Sus contraseñas si coinsidieron");</script>'; 
+}else{
+echo '<script type="text/javascript">alert("Las contraseñas no coinciden");</script>'; 
+}
+?>
+
+
+
+
+////////////////////////////
+activo inactivo
+
+
+<?php 
+	
+	require('conexion.php');
+	$id=$_GET['id'];
+	$estado=$_POST['estado'];
+	
+	
+	$query="SELECT estado FROM usuario WHERE id='$id'";
+	
+	$resultado=$mysqli->query($query);
+	
+	//$row=$resultado->fetch_assoc();
+	
+?>

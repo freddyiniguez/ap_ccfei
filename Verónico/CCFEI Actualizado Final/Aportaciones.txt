@@ -1,0 +1,15 @@
+caos de uso Alta usuario:
+1.-en la opcion de descripcion de casos de uso deberia de ir primero en flujo normal
+6. El sistema muestra una notificación con el mensaje “Usuario agregado exitosamente”.
+se debera de cambira por la 5
+y la 5 devera de ser la 6
+
+en flujo normal no deveria de agregarse la opcion de Estado "Activo" o "Inactivo"?
+
+en flujo alternativo deberia de ponerse los casos fallidos
+como "no se pudo conectar ala base de datos","Error al guardar usuario".
+
+
+
+en la ventana de la interfas de añadir alumno nuevo no deveria de tener un ide
+pues hay personas con el mismo nombre y veses con apelldos iguales

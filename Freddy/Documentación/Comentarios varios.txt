@@ -1,5 +1,6 @@
+tbl.Usuarios()
 tbl.Alumos(idAlumno, NombreCompleto, email)
-tbl.Lista(idLista, fk_idAlumno, calificacion)
+tbl.Lista(idLista, fk_idAlumno, calificacion, asistencia)
 tbl.Cursos(idCurso, fk_idMaestro, fk_idLista, nombreCurso, fechaInicio, fechaTermino, tipo, salón, horario, noSesiones)
 tbl.Constancias(fk_idAlumno, recurso)
 
